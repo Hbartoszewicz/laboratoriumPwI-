@@ -13,7 +13,7 @@ foreach ($conn->query($sql) as $row) {
     print $row['imie'] . "\t";
     print $row['nazwisko'] . "\t";
     print $row['kierunek'] . "\t";
-    print $row['stopien'] . "<br />\n";
+    print $row['stopien'] . "<br>\n";
 }
 ?>
 </body>
