@@ -7,9 +7,8 @@
 <?php
 
 $conn = new PDO('mysql:host=localhost;dbname=uczelnia', 'root', '');
-
-$sql = "UPDATE studenci SET nazwisko = 'Malinowski' WHERE id = 3";
-$conn->query($sql);
+$conn -> exec("UPDATE studenci SET nazwisko = 'Malinowski' WHERE id = 3"); 
+ 
 ?>
 </body>
 </html>
