@@ -10,7 +10,7 @@
 
         $stmt = 'DELETE FROM studenci WHERE id = :id';
         $stmt = $conn->prepare($stmt);
-        $stmt->bindValue(':id', $_POST["studenci"], PDO::PARAM_STR);
+        $stmt->bindValue(':id', $_POST["studenci"], PDO::PARAM_INT);
         $stmt->execute();
         ?>
 </body>
