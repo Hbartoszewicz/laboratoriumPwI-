@@ -15,7 +15,7 @@
 
         foreach ($conn->query($stmt) as $row) {
             print
-            "<option value = 'id' >"
+            "<option value = '$row[id]' >"
              .$row['imie']. " "
              .$row['nazwisko']
              ."</option>";
