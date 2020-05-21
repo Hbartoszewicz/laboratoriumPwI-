@@ -10,7 +10,7 @@ Imie: <input type="text" name="imie"><br>
 Nazwisko: <input type="text" name="nazwisko"><br>
 Email: <input type="text" name="email"><br>
 Rok: <input type="number" name="rok"><br>
-<button>Dodaj</button>
+<button type="submit">Dodaj</button>
 </form>
 
 </body>
