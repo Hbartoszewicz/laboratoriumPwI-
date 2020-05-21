@@ -23,7 +23,7 @@
         
         ?>
         </select>
-        <button>Usuń</button>
+        <button type="submit">Usuń</button>
     </form>
 </body>
 </html>
