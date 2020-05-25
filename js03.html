@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+   
+</head>
+<body>
+    Pierwsza liczba: <input type="number" id="liczba1"><br>
+    Druga liczba: <input type="number" id="liczba2"><br>
+    Dodawanie: <output  id="Dodawanie"></output><br>
+    Odejmowanie: <output  id="Odejmowanie"></output><br>
+    Mnożenie: <output  id="Mnozenie"></output><br>
+    Dzielenie: <output id="Dzielenie"></output><br>
+    <button type="button" id = "Oblicz" >Oblicz</button>
+    <script>
+        $( "#Oblicz" ).click(function() 
+        {
+            var liczba1 = $("#liczba1").val();
+            var liczba2 = $("#liczba2").val();
+            var Dodawanie = $("#Dodawanie");
+            var Odejmowanie = $("#Odejmowanie");
+            var Mnozenie = $("#Mnozenie");
+            var Dzielenie = $("#Dzielenie");
+
+            Dodawanie.val(liczba1+liczba2);
+            Odejmowanie.val(liczba1 - liczba2);
+            Mnozenie.val(liczba1*liczba2);
+            if(liczba2 == 0){
+                Dzielenie.val("Nie można dzielić przez 0")
+            }
+            else{
+                Dzielenie.val(liczba1/liczba2);
+            }
+        });    
+    </script>
+</body>
+</html>
